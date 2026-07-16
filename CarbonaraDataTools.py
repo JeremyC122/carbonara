@@ -36,7 +36,7 @@ from openmm.app import PDBFile
 from tempfile import NamedTemporaryFile
 import matplotlib.pyplot as plt
 
-import biobox as bb
+# import biobox as bb
 
 import shutil
 import re
@@ -189,7 +189,7 @@ def extract_sequence_file(fingerprint_file):
 import re
 import numpy as np
 import pandas as pd
-import biobox as bb  # assumes Matteo's biobox is installed
+#import biobox as bb  # assumes Matteo's biobox is installed
 
 def extract_coords_xyz_or_carbonara(coords_file):
     """Read a 3-column XYZ-style coords file; ignore lines like 'End chain ...' (any case)."""
@@ -3110,7 +3110,7 @@ from tempfile import NamedTemporaryFile
 import os
 import numpy as np
 import mdtraj as md
-import biobox as bb
+#import biobox as bb
 
 
 _CARBONARA_AA3 = {

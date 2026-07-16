@@ -2063,9 +2063,9 @@ std::vector<point> randomMol::makeRandomSectionWithDist(point &stPt,point &stTan
   if(strandOrLinker==0){
     if(typeProb<=pAlpha){
       type =1;
-    }else if(pAlpha<typeProb<=pAlpha+pposBeta){
+    }else if(pAlpha<typeProb && typeProb <=pAlpha+pposBeta){
       type =2;
-    }else if(pAlpha+pposBeta<typeProb<=pAlpha+pposBeta+pnegBeta){
+    }else if(pAlpha+pposBeta<typeProb && typeProb<=pAlpha+pposBeta+pnegBeta){
       type =3;
     }else{
       type=4;
@@ -2073,9 +2073,9 @@ std::vector<point> randomMol::makeRandomSectionWithDist(point &stPt,point &stTan
   }else{
     if(typeProb<=pAlphaStrand){
       type =8;
-    }else if(pAlphaStrand<typeProb<=pAlphaStrand+pposBetaStrand){
+    }else if(pAlphaStrand<typeProb &&typeProb<=pAlphaStrand+pposBetaStrand){
       type =8;
-    }else if(pAlphaStrand+pposBetaStrand<typeProb<=pAlphaStrand+pposBetaStrand+pnegBetaStrand){
+    }else if(pAlphaStrand+pposBetaStrand<typeProb && typeProb<=pAlphaStrand+pposBetaStrand+pnegBetaStrand){
       type =9;
     }else{
       type=9;
@@ -2184,9 +2184,9 @@ std::vector<point> randomMol::alterSectionWithDist(std::vector<point> currPts,in
   if(strandOrLinker==0){
     if(typeProb<=pAlpha){
       type =1;
-    }else if(pAlpha<typeProb<=pAlpha+pposBeta){
+    }else if(pAlpha<typeProb && typeProb <=pAlpha+pposBeta){
       type =2;
-    }else if(pAlpha+pposBeta<typeProb<=pAlpha+pposBeta+pnegBeta){
+    }else if(pAlpha+pposBeta<typeProb && typeProb <=pAlpha+pposBeta+pnegBeta){
       type =3;
     }else{
       type=4;
@@ -2194,9 +2194,9 @@ std::vector<point> randomMol::alterSectionWithDist(std::vector<point> currPts,in
   }else{
     if(typeProb<=pAlphaStrand){
       type =8;
-    }else if(pAlphaStrand<typeProb<=pAlphaStrand+pposBetaStrand){
+    }else if(pAlphaStrand<typeProb && typeProb <=pAlphaStrand+pposBetaStrand){
       type =8;
-    }else if(pAlphaStrand+pposBetaStrand<typeProb<=pAlphaStrand+pposBetaStrand+pnegBetaStrand){
+    }else if(pAlphaStrand+pposBetaStrand<typeProb && typeProb <=pAlphaStrand+pposBetaStrand+pnegBetaStrand){
       type =9;
     }else{
       type=9;
